@@ -116,23 +116,68 @@
 
         <div class="outer__inner">
 
-            <!--Hero section Start-->
-            <div class="section main main_stays">
-                <div class="main__center center">
-                    <div class="main__preview">
-                        <picture>
-                            <source media="(max-width: 767px)" srcSet="assets/img/main-pic-mobile-1"><img
-                                src="assets/img/main-pic-1.jpg" alt="Main">
-                        </picture>
-                        <div class="main__wrap">
-                            <h1 class="main__title hero">Air, sleep, dream</h1>
-                            <div class="main__info info">Find and book a great experience.</div><a
-                                class="button main__button" href="stays-category.html">Start your search</a>
+            <div class="section wishlists js-tabs">
+                <div class="wishlists__center center">
+                  <div class="control">
+                    <a class="button-stroke button-small control__button" href="/">
+                      <svg class="icon icon-arrow-left">
+                        <use xlink:href="#icon-arrow-left"></use>
+                      </svg><span>Go home</span>
+                    </a>
+                    <ul class="breadcrumbs">
+                      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Home</a></li>
+                      <li class="breadcrumbs__item">Team</li>
+                    </ul>
+                  </div>
+                  <div class="section live">
+                    <div class="live__center center">
+                      <div class="live__head">
+                        <h2 class="live__title h2"> Executive Board</h2>
+                        <div class="live__info info">Keep calm & travel on</div>
+                      </div>
+                      <div class="live__wrapper">
+                        <div class="live__slider js-slider-live js-slider-resize">
+                        
+                          <a class="live__item" href="#">
+                            <div class="live__preview"><img srcSet="assets/img/tushar.jpeg" src="assets/img/tushar1.jpeg"
+                                alt="Live"></div>
+                            <div class="live__subtitle">Tushar</div>
+                            <div class="live__content">President</div>
+                          </a>
+                         
                         </div>
+                      </div>
+                      <div class="live__btns">
+                        <button class="button-stroke button-small live__button">
+                          <div class="loader"></div><span>Load more</span>
+                        </button>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </div>
-            <!--Hero Section End-->
+              </div>
+              <div class="section places">
+                <div class="places__center center">
+                  <div class="places__inner">
+                    <div class="places__head">
+                      <h2 class="places__title h2">Board of Directors</h2>
+                      <div class="places__info info">10,789 beautiful places to go</div>
+                    </div>
+                    <div class="places__wrapper">
+                      <div class="places__slider js-slider-places js-slider-resize">
+                      {% for x in director %}
+                        <a class="places__item" href="{{x.url}}">
+                          <div class="status-gray places__number">{{x.rotaryid}}</div>
+                          <div class="places__preview"><img src="assets/img/tushar.jpeg" alt="{{x.name}}"></div>
+                          <div class="places__subtitle">{{x.name}}</div>
+                          <div class="places__time">{{x.position}}</div>
+                        </a>
+                      {% endfor %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             
 

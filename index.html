@@ -7,7 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rotaract Club of CVS | Home</title>
     <!--CSS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        var viewportmeta = document.querySelector('meta[name="viewport"]');
+        if (viewportmeta) {
+          if (screen.width < 375) {
+            var newScale = screen.width / 375;
+            viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+          } else {
+            viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+          }
+        }
+      </script>
 </head>
 
 <body>
@@ -33,7 +45,7 @@
                 </a>
                 <div class="header__wrapper js-header-wrapper">
                     <div class="header__item header__item_dropdown js-header-item">
-                        <button class="header__head js-header-head">Explore
+                        <button class="header__head js-header-head">Menu
                             <svg class="icon icon-arrow-down">
                                 <use xlink:href="#icon-arrow-down"></use>
                             </svg>
@@ -121,13 +133,13 @@
                 <div class="main__center center">
                     <div class="main__preview">
                         <picture>
-                            <source media="(max-width: 767px)" srcSet="assets\img\main-pic-mobile-1.jpg"><img
-                                src="assets/img/main-pic-1.jpg" alt="Main">
+                            <source media="(max-width: 767px)" srcSet="assets\img\main-pic-mobile-3.jpg"><img
+                                src="assets/img/main-pic-3.jpg" alt="Main">
                         </picture>
                         <div class="main__wrap">
-                            <h1 class="main__title hero">Air, sleep, dream</h1>
-                            <div class="main__info info">Find and book a great experience.</div><a
-                                class="button main__button" href="stays-category.html">Start your search</a>
+                            <h1 class="main__title hero">Aikyam 2.0</h1>
+                            <div class="main__info info">International Peace Day </div>
+                           <a class="button main__button" href="#">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -461,7 +473,7 @@
                         <div class="travel__col">
                             <div class="travel__wrapper">
                                 <div class="travel__gallery">
-                                    <div class="travel__bg"><img srcSet="assets/img/1.png" src="assets/img/1.png"
+                                    <div class="travel__bg"><img srcSet="assets/img/aero.png" src="assets/img/aero.png"
                                             alt="Travel"></div>
                                 </div>
                             </div>
@@ -473,340 +485,7 @@
 
 
             <!--FAQ-->
-            <div class="section faq">
-                <div class="faq__center center">
-                    <div class="faq__top">
-                        <div class="faq__stage">learn how to get started</div>
-                        <h1 class="faq__title h2">Frequently asked questions</h1>
-                        <div class="faq__info">
-                            Join Stacks community now to get free updates and also alot of
-                            freebies are waiting for you
-                        </div>
-                        <div class="mobile-show">
-                            <select class="select js-tabs-select">
-                                <option>Rotary </option>
-                                <option>Rotaract </option>
-                                <option>Rotaract Club of CVS</option>
-                                <option>College of Vocational Studies</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="faq__row js-tabs">
-                        <div class="faq__col">
-                            <div class="faq__nav">
-                                <a class="faq__link js-tabs-link active" href="#">
-                                    <svg class="icon icon-home">
-                                        <use xlink:href="#icon-home"></use>
-                                    </svg>Rotary</a><a class="faq__link js-tabs-link" href="#">
-                                    <svg class="icon icon-circle-and-square">
-                                        <use xlink:href="#icon-circle-and-square"></use>
-                                    </svg>Rotaract </a><a class="faq__link js-tabs-link" href="#">
-                                    <svg class="icon icon-lightning">
-                                        <use xlink:href="#icon-lightning"></use>
-                                    </svg>Our Club</a><a class="faq__link js-tabs-link" href="#">
-                                    <svg class="icon icon-pen">
-                                        <use xlink:href="#icon-pen"></use>
-                                    </svg>Our institution</a>
-                            </div>
-                        </div>
-                        <div class="faq__col">
-                            <div class="faq__box js-tabs-item" style="display: block">
-                                <div class="faq__item">
-                                    <div class="faq__head">What is Rotary</div>
-                                    <div class="faq__body">
-                                        <div class="faq__content">
-                                            Rotary is a global network of 1.2 million neighbors, friends, leaders, and
-                                            problem-solvers who see a
-                                            world where people unite and take action to create lasting change – across
-                                            the globe, in our
-                                            communities, and in ourselves.
-                                        </div>
-                                        <a href="https://www.rotary.org/en/about-rotary">
-                                            <button class="button-stroke button-small faq__button">
-                                                Learn more
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="faq__item">
-                                    <div class="faq__head">What is the Rotary theme for 2021-22?</div>
-                                    <div class="faq__body">
-                                        <div class="faq__content">
-                                            Serve to Change Lives
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="faq__item">
-                                    <div class="faq__head">How did Rotary start ?</div>
-                                    <div class="faq__body">
-                                        <div class="faq__content">
-                                            Rotary started with the vision of one man — Paul Harris. The Chicago
-                                            attorney formed the Rotary Club
-                                            of Chicago on 23 February 1905, so professionals with diverse backgrounds
-                                            could exchange ideas and
-                                            form meaningful, lifelong friendships.
-
-                                            Over time, Rotary’s reach and vision gradually extended to humanitarian
-                                            service. Members have a long
-                                            track record of addressing challenges in their communities and around the
-                                            world.
-                                        </div>
-                                        <a
-                                            href="Serve to Change Livehttps://www.rotary.org/en/about-rotary/history#:~:text=Rotary%20started%20with%20the%20vision,gradually%20extended%20to%20humanitarian%20service.">
-                                            <button class="button-stroke button-small faq__button">
-                                                Know more
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="faq__item">
-                                    <div class="faq__head">Who are famous Rotarians?</div>
-                                    <div class="faq__body">
-                                        <div class="faq__content">
-                                            All Rotarians are important and famous in their own way, but there are some
-                                            whose names are recognized
-                                            worldwide.
-                                            Here are some famous people who have worn the Rotary pin:
-                                        </div>
-                                        <a href="https://rotarypassport.org/stories/famous-rotarians">
-                                            <button class="button-stroke button-small faq__button">
-                                                Learn more
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="faq__box js-tabs-item">
-                                <div class="faq__item">
-                                    <div class="faq__head">What is Rotaract ?</div>
-                                    <div class="faq__body">
-                                        <div class="faq__content">
-                                            Rotaract originally began as a Rotary International youth program in 1968 at
-                                            Charlotte North Rotary
-                                            Club in Charlotte, North Carolina, United States, and has grown into a major
-                                            organization of over
-                                            10,904 clubs spread around the world and over 203,000 members in 189
-                                            countries
-                                        </div>
-                                        <a href="https://www.rotary.org/en/get-involved/rotaract-clubs">
-                                            <button class="button-stroke button-small faq__button">
-                                                Learn more
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="faq__item">
-                                    <div class="faq__head">what is Rotaract Motto ?</div>
-                                    <div class="faq__body">
-                                        <div class="faq__content">
-                                            Self Development - Fellowship Through Service
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="faq__item">
-                                    <div class="faq__head">Will it be worth to pay Rotaract Fees ?</div>
-                                    <div class="faq__body">
-                                        <div class="faq__content">
-                                            It is a service, leadership, professional and community service organization
-                                            (often miscommunicated as
-                                            a Social Service Club) for young men and women aged 18 and over.[4]
-
-                                            Rotaract focuses on the development of young adults as leaders in their
-                                            communities and workplaces.
-                                            Clubs around the world also take part in international service projects, in
-                                            a global effort to bring
-                                            peace and international understanding to the world.
-                                        </div>
-
-                                    </div>
-                                </div>
-
-
-                                <div class="faq__item">
-                                    <div class="faq__head">What are the benefits of joining Rotaract Club ?</div>
-                                    <div class="faq__body">
-                                        <div class="faq__content">
-                                            The purpose of Rotaract is to provide an opportunity for young men and women
-                                            to enhance the knowledge
-                                            and skills that will assist them in personal development, to address the
-                                            physical and social needs of
-                                            their communities, and to promote better relations between all people
-                                            worldwide through a framework of
-                                            friendship ...
-                                        </div>
-                                        <a href="http://www.princeton.edu/~rotaract/rot_cons.pdf">
-                                            <button class="button-stroke button-small faq__button">
-                                                Learn more
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="faq__box js-tabs-item">
-                                <div class="faq__item">
-                                    <div class="faq__head">About Rotaract Club of CVS </div>
-                                    <div class="faq__body">
-                                        <div class="faq__content">
-                                            Rotaract Club was formed in the college on 18th July 2018, sponsored by
-                                            Rotary Club of Delhi South
-                                            West. It
-                                            connects CVS Rotaractors with the Rotaract Movement and the best charter
-                                            club ,charted In 2018
-                                            connecting the world with fellowship and making forever bonds.
-                                        </div>
-                                        <a href="/about">
-                                            <button class="button-stroke button-small faq__button">
-                                                Learn more
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="faq__item">
-                                    <div class="faq__head">What is Stacks Design System</div>
-                                    <div class="faq__body">
-                                        <div class="faq__content">
-                                            The Stacks series of products: Stacks: Landing Page Kit,
-                                            Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is
-                                            a production-ready library of stackable content blocks
-                                            built in React Native. Mix-and-match dozens of
-                                            responsive elements to quickly configure your favorite
-                                            landing page layouts or hit the ground running with 10
-                                            pre-built templates, all in light or dark mode."
-                                        </div>
-                                        <button class="button-stroke button-small faq__button">
-                                            Learn more
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="faq__item">
-                                    <div class="faq__head">How does it work</div>
-                                    <div class="faq__body">
-                                        <div class="faq__content">
-                                            The Stacks series of products: Stacks: Landing Page Kit,
-                                            Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is
-                                            a production-ready library of stackable content blocks
-                                            built in React Native. Mix-and-match dozens of
-                                            responsive elements to quickly configure your favorite
-                                            landing page layouts or hit the ground running with 10
-                                            pre-built templates, all in light or dark mode."
-                                        </div>
-                                        <button class="button-stroke button-small faq__button">
-                                            Learn more
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="faq__item">
-                                    <div class="faq__head">Dose it suppport Dark Mode</div>
-                                    <div class="faq__body">
-                                        <div class="faq__content">
-                                            The Stacks series of products: Stacks: Landing Page Kit,
-                                            Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is
-                                            a production-ready library of stackable content blocks
-                                            built in React Native. Mix-and-match dozens of
-                                            responsive elements to quickly configure your favorite
-                                            landing page layouts or hit the ground running with 10
-                                            pre-built templates, all in light or dark mode."
-                                        </div>
-                                        <button class="button-stroke button-small faq__button">
-                                            Learn more
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="faq__box js-tabs-item">
-                                <div class="faq__item">
-                                    <div class="faq__head">How does it work</div>
-                                    <div class="faq__body">
-                                        <div class="faq__content">
-                                            The Stacks series of products: Stacks: Landing Page Kit,
-                                            Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is
-                                            a production-ready library of stackable content blocks
-                                            built in React Native. Mix-and-match dozens of
-                                            responsive elements to quickly configure your favorite
-                                            landing page layouts or hit the ground running with 10
-                                            pre-built templates, all in light or dark mode."
-                                        </div>
-                                        <button class="button-stroke button-small faq__button">
-                                            Learn more
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="faq__item">
-                                    <div class="faq__head">How to start with Stacks</div>
-                                    <div class="faq__body">
-                                        <div class="faq__content">
-                                            The Stacks series of products: Stacks: Landing Page Kit,
-                                            Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is
-                                            a production-ready library of stackable content blocks
-                                            built in React Native. Mix-and-match dozens of
-                                            responsive elements to quickly configure your favorite
-                                            landing page layouts or hit the ground running with 10
-                                            pre-built templates, all in light or dark mode."
-                                        </div>
-                                        <button class="button-stroke button-small faq__button">
-                                            Learn more
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="faq__item">
-                                    <div class="faq__head">Dose it suppport Dark Mode</div>
-                                    <div class="faq__body">
-                                        <div class="faq__content">
-                                            The Stacks series of products: Stacks: Landing Page Kit,
-                                            Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is
-                                            a production-ready library of stackable content blocks
-                                            built in React Native. Mix-and-match dozens of
-                                            responsive elements to quickly configure your favorite
-                                            landing page layouts or hit the ground running with 10
-                                            pre-built templates, all in light or dark mode."
-                                        </div>
-                                        <button class="button-stroke button-small faq__button">
-                                            Learn more
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="faq__item">
-                                    <div class="faq__head">Does it support Auto-Layout</div>
-                                    <div class="faq__body">
-                                        <div class="faq__content">
-                                            The Stacks series of products: Stacks: Landing Page Kit,
-                                            Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is
-                                            a production-ready library of stackable content blocks
-                                            built in React Native. Mix-and-match dozens of
-                                            responsive elements to quickly configure your favorite
-                                            landing page layouts or hit the ground running with 10
-                                            pre-built templates, all in light or dark mode."
-                                        </div>
-                                        <button class="button-stroke button-small faq__button">
-                                            Learn more
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="faq__item">
-                                    <div class="faq__head">What is Stacks Design System</div>
-                                    <div class="faq__body">
-                                        <div class="faq__content">
-                                            The Stacks series of products: Stacks: Landing Page Kit,
-                                            Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is
-                                            a production-ready library of stackable content blocks
-                                            built in React Native. Mix-and-match dozens of
-                                            responsive elements to quickly configure your favorite
-                                            landing page layouts or hit the ground running with 10
-                                            pre-built templates, all in light or dark mode."
-                                        </div>
-                                        <button class="button-stroke button-small faq__button">
-                                            Learn more
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <!--FAQ-->
 
             <!--Video Section Start-->
@@ -881,10 +560,10 @@
                     </div>
                 </div>
                 <div class="footer__bottom">
-                    <div class="footer__copyright">Copyright © 2021</a>
-                        <div class="footer__copyright">Rotaract Club of College of Vocational Studies</a>
+                    <div class="footer__copyright">Copyright © 2021, RaCCVS</a>
+                        
                             <div class="footer__copyright">Design & Developed by <a
-                                    href=" https://znap.link/PremBhatt "> Prem Bhatt </a>
+                                    href=" https://znap.link/PremBhatt "> Rtr. Prem Bhatt </a>
                             </div>
                         </div>
                     </div>
