@@ -6,8 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rotaract Club of CVS | Home</title>
+    <link rel="shortcut icon" href="assets/img/logo5.svg" type="image/x-icon">
     <!--CSS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        var viewportmeta = document.querySelector('meta[name="viewport"]');
+        if (viewportmeta) {
+            if (screen.width < 375) {
+                var newScale = screen.width / 375;
+                viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+            } else {
+                viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -33,7 +46,7 @@
                 </a>
                 <div class="header__wrapper js-header-wrapper">
                     <div class="header__item header__item_dropdown js-header-item">
-                        <button class="header__head js-header-head">Explore
+                        <button class="header__head js-header-head">Menu
                             <svg class="icon icon-arrow-down">
                                 <use xlink:href="#icon-arrow-down"></use>
                             </svg>
@@ -60,27 +73,23 @@
                                         <use xlink:href="#icon-location"></use>
                                     </svg>Meet Our Team
                                 </a>
-                                <a class="header__link" href="https://rotaractclubofcvs.substack.com/subscribe">
+                                <a class="header__link" href="wizard.counsel.html">
                                     <svg class="icon icon-comment">
                                         <use xlink:href="#icon-comment"></use>
-                                    </svg>Blog
+                                    </svg>Wizard Counsel
                                 </a>
                                 <a class="header__link" href="gallery.html">
                                     <svg class="icon icon-image">
                                         <use xlink:href="#icon-image"></use>
                                     </svg>Gallery
                                 </a>
-                                <a class="header__link" href="https://wizardcouncil.rotaractclubofcvs/">
-                                    <svg class="icon icon-flag">
-                                        <use xlink:href="#icon-flag"></use>
-                                    </svg>Wizard Council
-                                </a>
+
                             </div>
                         </div>
                     </div>
                     <a class="header__item" href="mailto:rotaractclubofcvs@gmail.com">Contact Us</a>
-                    <a class="button button-stroke button-small header__button" href="pass.html">Generate Your Event
-                        Pass</a>
+                    <a class="button button-stroke button-small header__button"
+                        href="https://my.rotary.org/en/signup">Create Your My Rotary Account</a>
                 </div>
                 <div class="header__item header__item_notification js-header-item">
                     <button class="header__head js-header-head active">
@@ -90,23 +99,28 @@
                     </button>
                     <div class="header__body js-header-body">
                         <div class="header__title">Notification</div>
-                        <div class="header__notifications"><a class="header__notification" href="message-center.html">
-                                <div class="header__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"></div>
+                        <div class="header__notifications">
+
+                            <a class="header__notification" href="https://www.instagram.com/rotaractclubofcvs/">
+                                <div class="header__avatar"><img src="assets/img/punit.jpeg" alt="Punit"></div>
                                 <div class="header__details">
-                                    <div class="header__subtitle">Kohaku Tora</div>
-                                    <div class="header__content">just sent you a message</div>
+                                    <div class="header__subtitle">Rtr. Punit Kumar</div>
+                                    <div class="header__content">Learn more about Aikyam 2.0</div>
                                     <div class="header__date">1 minute ago</div>
                                     <div class="header__status" style="background-color: #3B71FE;"></div>
                                 </div>
-                            </a><a class="header__notification" href="message-center.html">
-                                <div class="header__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"></div>
+                            </a>
+
+                            <a class="header__notification" href="https://www.instagram.com/ar/268986765060876/">
+                                <div class="header__avatar"><img src="assets/img/prem.jpeg" alt="Prem Bhatt"></div>
                                 <div class="header__details">
-                                    <div class="header__subtitle">Kohaku Tora</div>
-                                    <div class="header__content">just sent you a message</div>
-                                    <div class="header__date">3 hours ago</div>
+                                    <div class="header__subtitle">Rtr. Prem Bhatt</div>
+                                    <div class="header__content">Check Our Instagram Filter</div>
+                                    <div class="header__date">2 hours ago</div>
                                     <div class="header__status" style="background-color: #3B71FE;"></div>
                                 </div>
-                            </a></div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <button class="header__burger js-header-burger"></button>
@@ -115,113 +129,394 @@
         <!-- Header Section End-->
 
         <div class="outer__inner">
-            <div class="section upload">
-                <div class="upload__center center">
-                    <div class="control"><a class="button-stroke button-small control__button" href="index.html">
-                            <svg class="icon icon-arrow-left">
-                                <use xlink:href="#icon-arrow-left"></use>
-                            </svg><span>Go home</span></a>
-                        <ul class="breadcrumbs">
-                            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Home</a></li>
-                            <li class="breadcrumbs__item">Generate Your Event Pass</li>
-                        </ul>
+
+            <!--Hero section Start-->
+            <div class="section main main_tasks">
+                <div class="main__center center">
+                    <div class="main__preview">
+                        <picture>
+                            <source media="(max-width: 767px)" srcSet="assets/img/main-pic-mobile-5.jpg"><img
+                                src="assets/img/main-pic-5.jpg" alt="Main">
+                        </picture>
+                        <div class="main__wrap">
+                            <h1 class="main__title hero">Aikyam 2.0</h1>
+                            <div class="main__info info">Food is often used as a means of retaining their Cultural
+                                Identity</div>
+                            <a class="button main__button" href="https://instagram.com/rotaractclubofcvs?utm_medium=copy_link">Check Our Instagram Page</a>
+                        </div>
                     </div>
-                    <div class="upload__inner">
-                        <div class="upload__wrapper">
-                            <div class="upload__head">
-                                <h2 class="upload__title h2">Generate Your Event Pass</h2>
 
-                            </div>
-                            <div class="upload__form">
-                                
-                                <div class="upload__list">
+                </div>
+            </div>
+            <!--Hero Section End-->
 
-                                    <div class="upload__item">
+            <!--Notes Section Start-->
+            <div class="testimonials__center center js-tabs">
+                <div class="adventure__head">
+                    <h2 class="adventure__title h2"></h2>
+                    <div class="adventure__info info"></div>
+                </div>
+                <div class="testimonials__container">
+                    <div class="testimonials__item js-tabs-item" style="display: none;">
+                        <div class="testimonials__row">
+                            <div class="testimonials__col">
 
-                                        <div class="upload__fieldset">
-                                            <div class="field">
-                                                <div class="field__label">Your Rotary ID</div>
-                                                <div class="field__wrap">
-                                                    <input class="field__input" id="rotary_id" type="text" name="title"
-                                                        placeholder="e. g. &quot;7634567&quot;" required>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="upload__item">
-                                        <div class="field">
-                                            <div class="field__label">Your Awesome Name</div>
-                                            <div class="field__wrap">
-                                                <input class="field__input" id="rotary_id" type="text" name="title"
-                                                    placeholder="e. g. &quot;Rtr. Prem Bhatt&quot;" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="upload__item">
-                                        <div class="upload__category">Event Details</div>
-                                        <div class="upload__fieldset">
-                                            <div class="upload__row">
-                                                <div class="upload__col upload__col_w50">
-                                                    <div class="field">
-                                                        <div class="field__wrap">
-                                                            <input class="field__input" id="event" type="text" name="service5"
-                                                                placeholder="Event Name" required>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="upload__col upload__col_w50">
-                                                    <div class="field">
-                                                        <div class="field__wrap">
-                                                            <input class="field__input" id="date" type="text" name="service6"
-                                                                placeholder="Event Date" required>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button class="button-stroke upload__button">
-                                                <svg class="icon icon-plus">
-                                                    <use xlink:href="#icon-plus"></use>
-                                                </svg><span>Add more feature</span>
-                                            </button>
-                                        </div>
-                                    </div>
+                                <div class="testimonials__comment">The Rotaract Club of College of Vocational Studies
+                                    strives to provide the
+                                    best
+                                    experience to all its members. It was formed in 2018 and since then,it is working on
+                                    leadership and
+                                    professional development of its members.
+                                    Hence, our theme for this year is LEAD(Leadership Entrepreneurship Achieve
+                                    Development). This year we want
+                                    to focus
+                                    on all these avenues. We sincerely work towards the Rotaract motto ie Self
+                                    development - Fellowship
+                                    through service.
+                                    We have successfully completed many projects with an aim to promote community
+                                    development. We will
+                                    continue to serve the
+                                    society to bring about a positive social economic change in the lives of people.
                                 </div>
-                                <div class="upload__foot">
-                                    <button class="button-stroke upload__button js-upload-button">Preview</button>
-                                    <div class="button upload__button" > 
-                                    <a href="#" id="download-btn">
-                                        <span>Download Your Pass</span>
-                                        <svg class="icon icon-arrow-next">
-                                            <use xlink:href="#icon-arrow-next"></use>
+                                <div class="testimonials__details">
+                                    <div class="testimonials__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                            viewBox="0 0 24 24">
+                                            <path fill-rule="evenodd"
+                                                d="M2.804 5C2 6.392 2 8.262 2 12s0 5.608.804 7A6 6 0 0 0 5 21.196C6.392 22 8.262 22 12 22s5.608 0 7-.804A6 6 0 0 0 21.196 19C22 17.608 22 15.739 22 12s0-5.608-.804-7A6 6 0 0 0 19 2.804C17.608 2 15.739 2 12 2s-5.608 0-7 .804A6 6 0 0 0 2.804 5zm4.708 7.31c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.17.607-2.057 1.381-2.662 2.32C6.331 10.512 6 11.674 6 12.972c0 1.998.929 3.78 2.948 3.78a2.47 2.47 0 0 0 2.135-1.21c.538-.897.466-2.283-.378-3.071-.835-.78-2.207-.944-3.194-.161zm6.576 0c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.169.607-2.057 1.381-2.662 2.32-.661 1.027-.992 2.189-.992 3.487 0 1.998.929 3.78 2.948 3.78 1.367 0 2.476-1.031 2.476-2.476 0-1.571-1.117-2.476-2.476-2.476-.517 0-.995.17-1.436.51z"
+                                                fill="#777E90"></path>
                                         </svg>
-                                    </a>
                                     </div>
-                                    <div class="upload__saving">Auto saving
-                                        <div class="loader"></div>
+                                    <div class="testimonials__author">Rtr. Tushar Patial</div>
+
+                                </div>
+                            </div>
+                            <div class="testimonials__col">
+                                <div class="travel__col">
+                                    <div class="travel__wrapper">
+                                        <div class="travel__gallery">
+                                            <div class="travel__bg">
+                                                <img srcSet="assets/img/tush.png" src="assets/img/tush.png"
+                                                    alt="President">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="upload__preview js-upload-preview">
-                            <div class="upload__wrap">
-                                <button class="upload__close js-upload-close">
-                                    <svg class="icon icon-close">
-                                        <use xlink:href="#icon-close"></use>
-                                    </svg>
-                                </button>
-                                <div class="upload__subtitle">Preview</div><a class="card" style="height: 1000px;" href="#">
-                                    <canvas id="canvas" height="2000px" width="700px"></canvas>
-                                    
-                                    
-                                    
-                                </a>
+                    </div>
+                    <div class="testimonials__item js-tabs-item" style="display: block;">
+                        <div class="testimonials__row">
+                            <div class="testimonials__col">
+
+                                <div class="testimonials__comment">We all know that Rotaract is a voluntary organization
+                                    and their club success thrives on one thing only: commitment. Rotaractors are young
+                                    people who are committed to Rotary ideals, who are pouring their hearts into
+                                    service, and who, in the process, don’t forget to have fun. All the best to the
+                                    incoming team led by President Rtr Tushar Patial. Your community will know and judge
+                                    Rotaract by your actions, and just like everything else in life- you get out of it
+                                    what you put into it.  So, do good work to “Serve to change lives” and follow the
+                                    principle of “Service above Self”.</div>
+                                <div class="testimonials__details">
+                                    <div class="testimonials__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                            viewBox="0 0 24 24">
+                                            <path fill-rule="evenodd"
+                                                d="M2.804 5C2 6.392 2 8.262 2 12s0 5.608.804 7A6 6 0 0 0 5 21.196C6.392 22 8.262 22 12 22s5.608 0 7-.804A6 6 0 0 0 21.196 19C22 17.608 22 15.739 22 12s0-5.608-.804-7A6 6 0 0 0 19 2.804C17.608 2 15.739 2 12 2s-5.608 0-7 .804A6 6 0 0 0 2.804 5zm4.708 7.31c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.17.607-2.057 1.381-2.662 2.32C6.331 10.512 6 11.674 6 12.972c0 1.998.929 3.78 2.948 3.78a2.47 2.47 0 0 0 2.135-1.21c.538-.897.466-2.283-.378-3.071-.835-.78-2.207-.944-3.194-.161zm6.576 0c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.169.607-2.057 1.381-2.662 2.32-.661 1.027-.992 2.189-.992 3.487 0 1.998.929 3.78 2.948 3.78 1.367 0 2.476-1.031 2.476-2.476 0-1.571-1.117-2.476-2.476-2.476-.517 0-.995.17-1.436.51z"
+                                                fill="#777E90"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="testimonials__author">Rtn. SB Singh (CA)</div>
+
+                                </div>
+                            </div>
+                            <div class="testimonials__col">
+                                <div class="travel__col">
+                                    <div class="travel__wrapper">
+                                        <div class="travel__gallery">
+                                            <div class="travel__bg">
+                                                <img srcSet="assets/img/sbsingh.png" src="assets/img/sbsingh.png"
+                                                    alt="SB singh">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__item js-tabs-item" style="display: none;">
+                        <div class="testimonials__row">
+                            <div class="testimonials__col">
+
+                                <div class="testimonials__comment"> Rotaract Club of College of Vocational Studies is
+                                    one of the
+                                    organisations recognised by Rotary International. Chartered in 2018 in the College
+                                    as one of the most
+                                    active clubs, it falls under Rotaract District 3011. With more than 30 awards won in
+                                    2020-21, it has been
+                                    awarded as the best institution based club in Silver Category. I am immensely proud
+                                    to be associated with
+                                    this club as it's Mentor, where the members work tirelessly towards fulfilling the
+                                    global goals of peace,
+                                    health, education, environment and economic development. Even in the pandemic the
+                                    club has been doing it's
+                                    part by spreading awareness and dedicating itself to community service.
+                                    I urge all the current and new members of the club to put their best foot forward in
+                                    the service and hope
+                                    that they continue to render themselves in the selfless duty they have towards the
+                                    community
+                                </div>
+                                <div class="testimonials__details">
+                                    <div class="testimonials__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                            viewBox="0 0 24 24">
+                                            <path fill-rule="evenodd"
+                                                d="M2.804 5C2 6.392 2 8.262 2 12s0 5.608.804 7A6 6 0 0 0 5 21.196C6.392 22 8.262 22 12 22s5.608 0 7-.804A6 6 0 0 0 21.196 19C22 17.608 22 15.739 22 12s0-5.608-.804-7A6 6 0 0 0 19 2.804C17.608 2 15.739 2 12 2s-5.608 0-7 .804A6 6 0 0 0 2.804 5zm4.708 7.31c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.17.607-2.057 1.381-2.662 2.32C6.331 10.512 6 11.674 6 12.972c0 1.998.929 3.78 2.948 3.78a2.47 2.47 0 0 0 2.135-1.21c.538-.897.466-2.283-.378-3.071-.835-.78-2.207-.944-3.194-.161zm6.576 0c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.169.607-2.057 1.381-2.662 2.32-.661 1.027-.992 2.189-.992 3.487 0 1.998.929 3.78 2.948 3.78 1.367 0 2.476-1.031 2.476-2.476 0-1.571-1.117-2.476-2.476-2.476-.517 0-.995.17-1.436.51z"
+                                                fill="#777E90"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="testimonials__author">Asst. Prof. Barkha Jamwal</div>
+
+                                </div>
+                            </div>
+                            <div class="testimonials__col">
+                                <div class="travel__col">
+                                    <div class="travel__wrapper">
+
+                                        <div class="travel__gallery">
+                                            <div class="travel__bg">
+                                                <img srcSet="assets/img/barkha.png" src="assets/img/barkha.png"
+                                                    alt="Teacher">
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__item js-tabs-item" style="display: none;">
+                        <div class="testimonials__row">
+                            <div class="testimonials__col">
+
+                                <div class="testimonials__comment">We all know that Rotaract is a voluntary organization
+                                    and their club success thrives on one thing only: commitment. Rotaractors are young
+                                    people who are committed to Rotary ideals, who are pouring their hearts into
+                                    service, and who, in the process, don’t forget to have fun. To volunteer is to
+                                    commit and this means giving your time and skills to a cause. You all have come
+                                    together to take action in the communities, to develop your leadership and
+                                    professional skills, and to have fun. You all have your part to play and the most
+                                    important thing your club wants from you is your word. Great projects always start
+                                    with a word because if no one says anything, then nothing gets done. 
+
+                                    All the best to the incoming team led by President Rtr Tushar Patial. Your community
+                                    will know and judge Rotaract by your actions, and just like everything else in life-
+                                    you get out of it what you put into it.  So, do good work to “Serve to change lives”
+                                    and follow the principle of “Service above Self”.
+                                </div>
+                                <div class="testimonials__details">
+                                    <div class="testimonials__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                            viewBox="0 0 24 24">
+                                            <path fill-rule="evenodd"
+                                                d="M2.804 5C2 6.392 2 8.262 2 12s0 5.608.804 7A6 6 0 0 0 5 21.196C6.392 22 8.262 22 12 22s5.608 0 7-.804A6 6 0 0 0 21.196 19C22 17.608 22 15.739 22 12s0-5.608-.804-7A6 6 0 0 0 19 2.804C17.608 2 15.739 2 12 2s-5.608 0-7 .804A6 6 0 0 0 2.804 5zm4.708 7.31c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.17.607-2.057 1.381-2.662 2.32C6.331 10.512 6 11.674 6 12.972c0 1.998.929 3.78 2.948 3.78a2.47 2.47 0 0 0 2.135-1.21c.538-.897.466-2.283-.378-3.071-.835-.78-2.207-.944-3.194-.161zm6.576 0c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.169.607-2.057 1.381-2.662 2.32-.661 1.027-.992 2.189-.992 3.487 0 1.998.929 3.78 2.948 3.78 1.367 0 2.476-1.031 2.476-2.476 0-1.571-1.117-2.476-2.476-2.476-.517 0-.995.17-1.436.51z"
+                                                fill="#777E90"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="testimonials__author">Rtn. Mani Bajaj</div>
+
+                                </div>
+                            </div>
+                            <div class="testimonials__col">
+                                <div class="travel__col">
+                                    <div class="travel__wrapper">
+
+                                        <div class="travel__gallery">
+                                            <div class="travel__bg">
+                                                <img srcSet="assets/img/mani.png" src="assets/img/mani.png"
+                                                    alt="Prem Bhatt 1916">
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__item js-tabs-item" style="display: none;">
+                        <div class="testimonials__row">
+                            <div class="testimonials__col">
+
+                                <div class="testimonials__comment">My best wishes to Rotaract Club of Vocational Studies
+                                    for the launch of their website. This will entail a lot of information on the social
+                                    activities of the club to be put up online. The way Rotaract Club of vocational
+                                    studies have been working on social projects, the day is not far when they will be
+                                    one of the best Rotaract Clubs in the District. The whole social ecosystem is well
+                                    encapsulated through various projects done through out the year by these young guns.
+                                    Am sure all of you will become worthy Rotarians upon finishing your stint as the
+                                    Rotaractors. Best wishes and blessings always. Jai Guruji.
+                                </div>
+                                <div class="testimonials__details">
+                                    <div class="testimonials__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                            viewBox="0 0 24 24">
+                                            <path fill-rule="evenodd"
+                                                d="M2.804 5C2 6.392 2 8.262 2 12s0 5.608.804 7A6 6 0 0 0 5 21.196C6.392 22 8.262 22 12 22s5.608 0 7-.804A6 6 0 0 0 21.196 19C22 17.608 22 15.739 22 12s0-5.608-.804-7A6 6 0 0 0 19 2.804C17.608 2 15.739 2 12 2s-5.608 0-7 .804A6 6 0 0 0 2.804 5zm4.708 7.31c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.17.607-2.057 1.381-2.662 2.32C6.331 10.512 6 11.674 6 12.972c0 1.998.929 3.78 2.948 3.78a2.47 2.47 0 0 0 2.135-1.21c.538-.897.466-2.283-.378-3.071-.835-.78-2.207-.944-3.194-.161zm6.576 0c-.261-.783-.133-1.903.756-3.014.488-.61 1.056-1.083 1.704-1.421a.41.41 0 0 0 .186-.545c-.095-.184-.319-.261-.503-.166-1.169.607-2.057 1.381-2.662 2.32-.661 1.027-.992 2.189-.992 3.487 0 1.998.929 3.78 2.948 3.78 1.367 0 2.476-1.031 2.476-2.476 0-1.571-1.117-2.476-2.476-2.476-.517 0-.995.17-1.436.51z"
+                                                fill="#777E90"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="testimonials__author">Rtn. Sudip De</div>
+
+                                </div>
+                            </div>
+                            <div class="testimonials__col">
+                                <div class="travel__col">
+                                    <div class="travel__wrapper">
+
+                                        <div class="travel__gallery">
+                                            <div class="travel__bg">
+                                                <img srcSet="assets/img/sudeep.png" src="assets/img/sudeep.png"
+                                                    alt="Travel">
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__nav">
+                    <a class="testimonials__link js-tabs-link" href="#" data-aos="animation-opacity">
+                        <div class="testimonials__avatar"><img src="assets/img/tushar1.jpeg" alt="President"></div>
+                        <div class="testimonials__group">
+                            <div class="testimonials__man">Rtr. Tushar Patial</div>
+                            <div class="testimonials__position">Club President</div>
+                        </div>
+                    </a>
+                    <a class="testimonials__link js-tabs-link active" href="#" data-aos="animation-opacity">
+                        <div class="testimonials__avatar"><img src="assets/img/sbsingh.png" alt="SB Singh"></div>
+                        <div class="testimonials__group">
+                            <div class="testimonials__man">Rtn. SB Singh (CA)</div>
+                            <div class="testimonials__position">Parent Club President</div>
+                        </div>
+                    </a>
+                    <a class="testimonials__link js-tabs-link" href="#" data-aos="animation-opacity">
+                        <div class="testimonials__avatar"><img src="assets/img/barkha.png" alt="Teacher"></div>
+                        <div class="testimonials__group">
+                            <div class="testimonials__man">Asst. Prof. Barkha </div>
+                            <div class="testimonials__position">Faculty Mentor</div>
+                        </div>
+                    </a>
+                    <a class="testimonials__link js-tabs-link" href="#" data-aos="animation-opacity">
+                        <div class="testimonials__avatar"><img src="assets/img/mani.png" alt="Prem Bhatt"></div>
+                        <div class="testimonials__group">
+                            <div class="testimonials__man">Rtn. Mani Bajaj</div>
+                            <div class="testimonials__position">Parent Club Secretary</div>
+                        </div>
+                    </a>
+                    <a class="testimonials__link js-tabs-link" href="#" data-aos="animation-opacity">
+                        <div class="testimonials__avatar"><img src="assets/img/sudeep.png" alt="Mansi"></div>
+                        <div class="testimonials__group">
+                            <div class="testimonials__man">Rtn. Sudip De</div>
+                            <div class="testimonials__position">Rotaract Chair </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--Notes Section End-->
+
+
+            <!--About Section Start-->
+            <div class="section_travel">
+                <div class="travel__center center">
+                    <div class="travel__head">
+                        <h2 class="travel__title h2">Our Vision & Mission</h2>
+                        <div class="travel__info info">Rota Year 2021 - 22 </div>
+                    </div>
+                    <div class="travel__row">
+                        <div class="travel__col">
+                            <div class="travel__list">
+                                <div class="travel__item">
+                                    <div class="travel__number" style="background-color: #8BC5E5;">01</div>
+                                    <div class="travel__subtitle">Service Above Self</div>
+                                    <div class="travel__content">The club, consistently, persists to provide projects
+                                        for the community which
+                                        aim at sustainable development in accordance with the core values of
+                                        self-awareness, professionalism,
+                                        responsiveness and solidarity. </div>
+                                </div>
+                                <div class="travel__item">
+                                    <div class="travel__number" style="background-color: #92A5EF;">02</div>
+                                    <div class="travel__subtitle">Self - Reliant and Self- Sufficient. </div>
+                                    <div class="travel__content">It aims to generate all those opportunities which would
+                                        drive people to be
+                                        self - reliant and self- sufficient. </div>
+                                </div>
+                                <div class="travel__item">
+                                    <div class="travel__number" style="background-color: #58C27D;">03</div>
+                                    <div class="travel__subtitle">Building the Personality</div>
+                                    <div class="travel__content">We aim at extending opportunities and a firm support
+                                        for our members,
+                                        assisting in paving a way to make developed community and professional leaders
+                                        for a better tomorrow.
+                                    </div>
+                                </div>
+                            </div><a class="button travel__button" href="/about">About Us
+                            </a>
+                        </div>
+                        <div class="travel__col">
+                            <div class="travel__wrapper">
+                                <div class="travel__gallery">
+                                    <div class="travel__bg"><img srcSet="assets/img/aero.png" src="assets/img/aero.png"
+                                            alt="Travel"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--About Section End-->
+
+
+            <!--FAQ-->
+
+            <!--FAQ-->
+
+            <!--Video Section Start-->
+            <div class="section view">
+                <div class="view__center center">
+                    <div class="view__head">
+                        <div class="view__details">
+                            <div class="view__stage">Meet people, try new activities, and</div>
+                            <h2 class="view__title h2">Make a difference <br>with us!</h2>
+                        </div><a class="button view__button" href="#">Join the Movement.</a>
+                    </div>
+                    <div class="view__body"><a class="view__preview js-open-phone" data-fancybox
+                            href="https://youtu.be/Ak2BIHdxaeE"><img
+                                src="assets/img/WhatsApp Image 2021-08-30 at 12.40.53 PM.jpeg" alt="Video">
+                            <button class="play">
+                                <svg class="icon icon-play">
+                                    <use xlink:href="#icon-play"></use>
+                                </svg>
+                            </button></a></div>
+                </div>
+            </div>
+            <!--Video Section End-->
+
+
+
+
+
+
         </div>
+
+
 
 
 
@@ -265,13 +560,13 @@
                     </div>
                 </div>
                 <div class="footer__bottom">
-                    <div class="footer__copyright">Copyright © 2021</a>
-                        <div class="footer__copyright">Rotaract Club of College of Vocational Studies</a>
-                            <div class="footer__copyright">Design & Developed by <a
-                                    href=" https://znap.link/PremBhatt "> Prem Bhatt </a>
-                            </div>
+                    <div class="footer__copyright">Copyright © 2021, RaCCVS</a>
+
+                        <div class="footer__copyright">Design & Developed by <a href=" https://znap.link/PremBhatt ">
+                                Rtr. Prem Bhatt </a>
                         </div>
                     </div>
+                </div>
         </footer>
         <!--Footer Section End-->
 
@@ -297,7 +592,7 @@
     <script src="assets/js/lib/simpleParallax.min.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/style.js"></script>
-    <script src="assets/js/script.js"></script>
+    
 
     <!-- svg sprite-->
     <div style="display: none"><svg width="0" height="0">
